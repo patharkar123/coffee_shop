@@ -1,0 +1,10 @@
+inventory:
+    url: ${INVENTORY_URL}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,metrics,prometheus
+
+        
