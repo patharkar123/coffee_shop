@@ -25,10 +25,10 @@ jobs:
 
       - name: Build and push Inventory Service image
         run: |
-          docker build -t ${{ secrets.DOCKER_USERNAME }}/inventory-service:latest ./inventory-service
-          docker push ${{ secrets.DOCKER_USERNAME }}/inventory-service:latest
+          docker build -t sanketpatharkar/inventory-service:latest ./inventory-service
+          docker push sanketpatharkar/inventory-service:latest
 
       - name: Build and push Order Service image
         run: |
-          docker build -t ${{ secrets.DOCKER_USERNAME }}/order-service:latest ./order-service
-          docker push ${{ secrets.DOCKER_USERNAME }}/order-service:latest
+          docker build -t sanketpatharkar/order-service:latest ./order-service
+          docker push sanketpatharkar/order-service:latest
